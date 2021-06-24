@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Task-meneger</title>
+</head>
+<body>
+    <section class="section">
+        <h1 class="h1">Новая задача</h1>
+
+        <form action="#" id="form" class="form">
+            <label class="form__input-label">
+                Название
+                <input id="form-task" type="text" class="form__item" name="taskName" required>
+            </label>
+           
+            <label class="form__input-label">
+                Комментарий
+                <textarea id="form-com" name="taskComm" cols="30" rows="10" class="form__item"></textarea>
+            </label>
+
+            <button id="form-btn" class="form__item form__btn" type="button">Добавить</button>            
+        </form>
+    </section>
+
+    <section class="section">
+        <h1 class="h1">Список задач на день</h1>
+
+        <ul id="task-list" class="task-list">
+            <li class="task-list__item" draggable="true">
+                <div>
+                    <div class="task-list__main">Заняться йогой</div>
+                    <div class="task-list__comm">30 - 40 минут, по модулю №4</div>
+                </div>
+
+                <button class="task-list__btn" aria-label="Закрыть"></button>           
+            </li>
+
+            <li class="task-list__item" draggable="true">
+                <div>
+                    <div class="task-list__main">Проверить почту</div>
+                    <div class="task-list__comm">Обязательно ответить на коммерческое предложение</div>
+                </div>
+
+                <button class="task-list__btn" aria-label="Закрыть"></button>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
